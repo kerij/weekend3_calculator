@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <link rel="stylesheet" href="../styles/styles.css" />
     <script type="text/javascript" src="../assets/vendor/jquery.min.js">
     </script>
     <script type "text/javascript" src="../scripts/client-app.js">
     </script>
     <title>Calculator</title>
-</head>
-<body>
-  <h1>Calculator</h1>
-  <div class="number-inputs">
-    <form id="inputs">
-      <label for="number1">Enter your first number:</label>
-      <input type="text" id="number1" name="number2" />
+  </head
+  <body>
+    <h1>Calculator</h1>
+    <div class="calc">
+      <form id="input-form">
+        <label for="number1">Enter your first number:</label>
+        <input type="text" id="number1" name="number1" />
 
-      <label for="number2">Enter your second number:</label>
-      <input type="text" id="trait" name="trait" />
-    </form>
-  </div>
-  <div class="operators">
-    <button id="add" class="operator">+</button>
-    <button id="subtract" class="operator">-</button>
-    <button id="multiply" class="operator">x</button>
-    <button id="divide" class="operator">/</button>
-  </div>
-  <div class="equals">
-    <button id="equalSign" class="equals">=</button>
-  </div>
-  <div class="answer">
-  </div>
-</body>
+        <label for="number2">Enter your second number:</label>
+        <input type="text" id="number2" name="number2" />
 
+        <div class="operators">
+          <p>Choose your operator: </p>
+          <div id="add" class="operator" data-operator="add">+</div>
+          <div id="subtract" class="operator" data-operator="subtract">-</div>
+          <div id="multiply" class="operator" data-operator="multiply">x</div>
+          <div id="divide" class="operator" data-operator="divide">/</div>
+        </div>
+
+        <button id="submit">=</button>
+
+      </form>
+    </div>
+    <div id="answer"></div>
+  </body>
 </html>

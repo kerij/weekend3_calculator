@@ -2,13 +2,13 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var path = require('path');
+var problem = require('./routes/problem.js');
 
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-
-
+app.use('/problem', problem);
 
 
 //any request to a url

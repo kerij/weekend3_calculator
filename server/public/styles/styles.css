@@ -1,0 +1,21 @@
+.operator{
+  display: inline-block;
+  border: 1px solid black;
+  margin: 5px 5px 5px 5px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+.calc {
+  border: 1px solid blue;
+  padding: 5px 5px 5px 5px;
+}
+
+.active {
+  background-color: yellow;
+}
+
+#submit {
+  margin: 10px 0 10px 10px;
+}
