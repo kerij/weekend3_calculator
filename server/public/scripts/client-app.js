@@ -10,11 +10,12 @@ $(document).ready(function() {
     $.each($("#input-form").serializeArray(), function(i, field){
       problem[field.name] = field.value;
 
-    //console.log($(".operators").children(".active").data("operator"));
     });
     problem.operator = $(".operators").children(".active").data("operator");
     console.log(problem);
     sendProblem(problem);
+    $(':input','#input-form').not(':button, :submit, :reset, :hidden').val('')
+    $('.operators').children(".active").removeClass("active");
 
   });
 
